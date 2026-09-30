@@ -85,3 +85,138 @@ section {
     font-size: 18px;
     color: #5a4636;
 }
+
+/* ---------- BOTÕES (classe reaproveitada em vários lugares do site) ---------- */
+
+/* Botão com borda grossa e sombra "dura" (sem desfoque), no estilo de cartaz de feira.
+   cursor: pointer mostra a mãozinha quando o mouse passa em cima */
+.botao {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #d62d20;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 3px solid #1d1611;
+    border-radius: 6px;
+    box-shadow: 4px 4px 0 #1d1611;
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+/* :hover - com o mouse em cima, o botão "sobe" (transform) e a sombra cresce */
+.botao:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 #1d1611;
+}
+
+/* :focus - contorno amarelo para quem navega pelo teclado (tecla Tab) */
+.botao:focus {
+    outline: 3px solid #ffc629;
+    outline-offset: 3px;
+}
+
+/* Variação amarela do botão, usada no "Peça pelo WhatsApp" */
+.botao-amarelo {
+    background-color: #ffc629;
+    color: #1d1611;
+}
+
+/* ---------- FAIXA DE AVISO (id, porque só existe uma na página) ---------- */
+
+/* text-align: center centraliza o recado; letter-spacing afasta as letras */
+#topo {
+    background-color: #1d1611;
+    color: #ffc629;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 8px 16px;
+}
+
+#topo p {
+    margin: 0;
+}
+
+/* ---------- CABEÇALHO ---------- */
+
+/* position: sticky com top: 0 deixa o cabeçalho grudado no alto da tela ao rolar;
+   z-index coloca ele por cima das outras partes da página */
+#cabecalho {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background-color: #d62d20;
+    border-bottom: 4px solid #1d1611;
+}
+
+/* display: flex coloca logo, menu e botão lado a lado;
+   flex-wrap deixa os itens descerem de linha quando não cabem; gap é o espaço entre eles */
+.cabecalho-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+/* Logo em texto: fonte grossa, branca, com uma sombra dura preta (text-shadow) */
+#logo {
+    font-family: "Anton", Impact, "Arial Black", sans-serif;
+    font-size: 32px;
+    line-height: 1;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 0 #1d1611;
+}
+
+/* display: block faz o "desde 1994" ocupar uma linha só dele, embaixo do nome */
+.logo-desde {
+    display: block;
+    margin-top: 4px;
+    font-family: "Archivo", Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #ffc629;
+    text-shadow: none;
+}
+
+/* Lista do menu em linha (flex) e sem as bolinhas da lista (list-style: none) */
+#menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Links do menu: brancos, em maiúsculas, com uma borda embaixo que fica
+   transparente e só aparece no hover. transition deixa a troca de cor suave */
+#menu a {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-bottom: 3px;
+    border-bottom: 3px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+/* :hover (mouse em cima) e :focus (teclado) deixam o link amarelo e sublinhado */
+#menu a:hover,
+#menu a:focus {
+    color: #ffc629;
+    border-bottom-color: #ffc629;
+    outline: none;
+}

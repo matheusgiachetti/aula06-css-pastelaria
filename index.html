@@ -16,6 +16,43 @@
 </head>
 
 <body>
+    <!-- ===================== FAIXA DE AVISO =====================
+         Tira escura bem no alto da página, com os recados rápidos da casa.
+         O id="topo" é o destino do botão "voltar ao topo" -->
+    <div id="topo">
+        <p>Aberto de terça a domingo &middot; Entrega na Vila Hortência e região &middot; Aceitamos Pix e cartão</p>
+    </div>
+
+    <!-- ===================== CABEÇALHO =====================
+         Nome da pastelaria, menu com links de âncora para as seções
+         e o botão de pedido pelo WhatsApp -->
+    <header id="cabecalho">
+        <!-- A div usa duas classes: container (largura máxima) e cabecalho-conteudo (flex) -->
+        <div class="container cabecalho-conteudo">
+            <!-- Logo em texto: o link leva de volta ao começo da página -->
+            <a href="#inicio" id="logo">
+                Pastelaria da Vila
+                <!-- Este span tem display: block no CSS, por isso fica embaixo do nome -->
+                <span class="logo-desde">Desde 1994 &middot; Sorocaba</span>
+            </a>
+
+            <!-- Menu de navegação: cada href="#..." aponta para o id de uma seção da página -->
+            <nav id="menu" aria-label="Menu principal">
+                <ul>
+                    <li><a href="#cardapio">Cardápio</a></li>
+                    <li><a href="#promocoes">Promoções</a></li>
+                    <li><a href="#historia">Nossa história</a></li>
+                    <li><a href="#avaliacoes">Avaliações</a></li>
+                    <li><a href="#funcionamento">Horário e endereço</a></li>
+                </ul>
+            </nav>
+
+            <!-- Botão de pedido: o link wa.me abre uma conversa no WhatsApp (número fictício).
+                 target="_blank" abre em outra aba -->
+            <a href="https://wa.me/5515900000000?text=Oi!%20Quero%20fazer%20um%20pedido." class="botao botao-amarelo" target="_blank" rel="noopener">Peça pelo WhatsApp</a>
+        </div>
+    </header>
+
     <!-- Conteúdo principal da página: cada parte do site é uma <section> -->
     <main>
     </main>
