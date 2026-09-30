@@ -556,3 +556,81 @@ section {
 .adicionais strong {
     color: #d62d20;
 }
+
+/* ---------- PROMOÇÕES DA SEMANA ---------- */
+
+/* Seção com fundo vermelho, a cor principal da marca */
+#promocoes {
+    background-color: #d62d20;
+    color: #ffffff;
+}
+
+/* Aqui o título fica amarelo com uma sombra dura para não sumir no vermelho */
+#promocoes .titulo-secao {
+    color: #ffc629;
+    text-shadow: 3px 3px 0 #1d1611;
+}
+
+#promocoes .intro-secao {
+    color: #ffe7a3;
+}
+
+.grade-promocoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+}
+
+/* Cada promoção parece uma etiqueta de preço: fundo claro, borda preta
+   e girada um pouco para a esquerda com transform: rotate */
+.promo {
+    width: calc(33.333% - 19px);
+    padding: 26px 24px;
+    background-color: #fff8ec;
+    color: #1d1611;
+    border: 3px solid #1d1611;
+    border-radius: 4px;
+    transform: rotate(-1.5deg);
+    transition: transform 0.2s;
+}
+
+/* :nth-child(2) pega só a segunda etiqueta e gira ela para o outro lado */
+.promo:nth-child(2) {
+    transform: rotate(1deg);
+}
+
+/* No hover a etiqueta fica reta e cresce um pouco (scale) */
+.promo:hover {
+    transform: rotate(0deg) scale(1.03);
+}
+
+/* Dia da promoção numa tarjinha escura */
+.promo-dia {
+    display: inline-block;
+    margin: 0 0 12px 0;
+    padding: 2px 10px;
+    background-color: #1d1611;
+    color: #ffc629;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.promo-titulo {
+    font-size: 30px;
+}
+
+.promo-texto {
+    margin: 0 0 16px 0;
+    font-size: 15px;
+    color: #5a4636;
+}
+
+.promo-preco {
+    margin: 0;
+    font-family: "Anton", Impact, "Arial Black", sans-serif;
+    font-size: 40px;
+    line-height: 1;
+    color: #d62d20;
+}
