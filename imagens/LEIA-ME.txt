@@ -1,0 +1,41 @@
+PASTA DE IMAGENS - PASTELARIA DA VILA
+=====================================
+
+Coloque nesta pasta as fotos abaixo, com EXATAMENTE estes nomes
+(tudo minúsculo, com hífen e extensão .jpg). Enquanto a foto não
+existir, o site mostra um bloco bege com a descrição no lugar dela,
+sem quebrar o layout.
+
+Tamanho sugerido: fotos na horizontal, com pelo menos 800 px de largura.
+O CSS recorta as fotos sozinho (object-fit: cover), então não precisa
+deixar todas do mesmo tamanho.
+
+DESTAQUE INICIAL
+- pastel-destaque.jpg ......... pastel de carne cortado ao meio, recheio aparecendo
+
+PASTÉIS SALGADOS
+- pastel-carne.jpg ............ pastel de carne
+- pastel-queijo.jpg ........... pastel de queijo
+- pastel-pizza.jpg ............ pastel de pizza
+- pastel-frango-catupiry.jpg .. pastel de frango com catupiry
+- pastel-palmito.jpg .......... pastel de palmito
+- pastel-carne-seca.jpg ....... pastel de carne seca com queijo
+- pastel-calabresa.jpg ........ pastel de calabresa
+- pastel-especial.jpg ......... pastel Especial da Vila
+
+PASTÉIS DOCES
+- pastel-banana-canela.jpg .... pastel de banana com canela
+- pastel-chocolate.jpg ........ pastel de chocolate
+- pastel-romeu-julieta.jpg .... pastel de goiabada com queijo
+- pastel-doce-de-leite.jpg .... pastel de doce de leite com coco
+
+BEBIDAS
+- caldo-de-cana.jpg ........... copo de caldo de cana (de preferência com a moenda)
+
+NOSSA HISTÓRIA
+- dona-cida-balcao.jpg ........ pessoa abrindo massa de pastel num balcão
+
+HORÁRIO E ENDEREÇO
+- fachada-loja.jpg ............ fachada de pastelaria com toldo vermelho
+
+Total: 16 fotos.
