@@ -728,3 +728,92 @@ section {
     font-weight: 400;
     color: #d62d20;
 }
+
+/* ---------- AVALIAÇÕES ---------- */
+
+/* Seção escura para contrastar com o creme das seções vizinhas */
+#avaliacoes {
+    background-color: #1d1611;
+    color: #f7eedc;
+}
+
+#avaliacoes .titulo-secao {
+    color: #ffc629;
+}
+
+#avaliacoes .intro-secao {
+    color: #cbb89c;
+}
+
+.grade-avaliacoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+/* Cada avaliação: três por linha, com uma borda amarela grossa só do lado esquerdo.
+   border-radius com quatro valores arredonda só os cantos da direita */
+.avaliacao {
+    width: calc(33.333% - 16px);
+    margin: 0;
+    padding: 22px 24px;
+    background-color: #2b211a;
+    border-left: 6px solid #ffc629;
+    border-radius: 0 8px 8px 0;
+    transition: background-color 0.2s;
+}
+
+/* :hover clareia um pouco o fundo da avaliação */
+.avaliacao:hover {
+    background-color: #3a2d23;
+}
+
+.avaliacao p {
+    margin: 0 0 12px 0;
+}
+
+/* Avaliação em destaque: ocupa a largura toda, fundo vermelho e letra maior */
+.avaliacao-destaque {
+    width: 100%;
+    background-color: #d62d20;
+    color: #ffffff;
+}
+
+.avaliacao-destaque:hover {
+    background-color: #c02619;
+}
+
+.avaliacao-destaque .comentario {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+/* Estrelas amarelas com espaço entre elas (letter-spacing) */
+.estrelas {
+    color: #ffc629;
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+
+/* opacity: 0.3 deixa a estrela quase transparente, mostrando que a nota foi 4 */
+.estrela-apagada {
+    opacity: 0.3;
+}
+
+.comentario {
+    font-size: 16px;
+}
+
+.avaliacao .cliente {
+    margin: 0;
+    font-weight: 800;
+}
+
+/* display: block coloca o bairro numa linha abaixo do nome */
+.bairro {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.7;
+}
