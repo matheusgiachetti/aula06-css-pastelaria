@@ -917,3 +917,94 @@ address {
     letter-spacing: 1px;
     color: #d62d20;
 }
+
+/* ---------- RODAPÉ ---------- */
+
+/* text-align: center centraliza todo o conteúdo do rodapé */
+#rodape {
+    padding: 50px 0 30px;
+    background-color: #1d1611;
+    color: #f7eedc;
+    border-top: 6px solid #d62d20;
+    text-align: center;
+}
+
+#rodape p {
+    margin: 0 0 10px 0;
+}
+
+#rodape-logo {
+    font-family: "Anton", Impact, "Arial Black", sans-serif;
+    font-size: 40px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffc629;
+}
+
+.rodape-links {
+    margin: 24px 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* display: inline coloca os itens da lista um do lado do outro, como texto corrido */
+.rodape-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.rodape-links a {
+    color: #f7eedc;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.rodape-links a:hover,
+.rodape-links a:focus {
+    color: #ffc629;
+    text-decoration: underline;
+}
+
+/* Créditos pequenos e meio apagados (opacity) */
+#rodape .creditos {
+    max-width: 640px;
+    margin: 20px auto 0;
+    font-size: 13px;
+    opacity: 0.6;
+}
+
+/* ---------- BOTÃO VOLTAR AO TOPO ---------- */
+
+/* position: fixed deixa o botão sempre no mesmo lugar da tela;
+   right e bottom colocam ele no canto de baixo à direita.
+   z-index alto garante que ele fique por cima de tudo */
+#voltar-topo {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 100;
+    width: 54px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffc629;
+    color: #1d1611;
+    border: 3px solid #1d1611;
+    border-radius: 50%;
+    box-shadow: 3px 3px 0 #1d1611;
+    font-size: 26px;
+    font-weight: 800;
+    text-decoration: none;
+    opacity: 0.9;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+/* No hover/focus o botão fica totalmente visível e sobe um pouco */
+#voltar-topo:hover,
+#voltar-topo:focus {
+    opacity: 1;
+    transform: translateY(-4px);
+}
