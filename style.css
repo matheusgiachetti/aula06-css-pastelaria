@@ -881,8 +881,8 @@ section {
     font-size: 15px;
 }
 
+/* Espaço interno e linha tracejada embaixo de cada linha da tabela */
 .tabela-horario th,
-/* Horário alinhado à direita da tabela */
 .tabela-horario td {
     padding: 9px 0;
     border-bottom: 1px dashed #c9b28e;
@@ -895,6 +895,7 @@ section {
     font-weight: 800;
 }
 
+/* Horário alinhado à direita da tabela */
 .tabela-horario td {
     text-align: right;
 }
