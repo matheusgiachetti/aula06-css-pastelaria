@@ -139,6 +139,7 @@ section {
     padding: 8px 16px;
 }
 
+/* Tira a margem padrão do parágrafo para a faixa ficar fininha */
 #topo p {
     margin: 0;
 }
@@ -292,6 +293,7 @@ section {
     opacity: 0.85;
 }
 
+/* Os dois botões lado a lado, com espaço entre eles (gap) */
 .inicio-botoes {
     display: flex;
     flex-wrap: wrap;
@@ -338,6 +340,7 @@ section {
     transform: rotate(-12deg);
 }
 
+/* O preço aparece maior e em amarelo dentro do selo */
 #selo-preco strong {
     font-size: 34px;
     font-weight: 400;
@@ -424,11 +427,13 @@ section {
     padding: 18px;
 }
 
+/* Nome do pastel no cartão */
 .card-nome {
     font-size: 24px;
     margin-bottom: 6px;
 }
 
+/* Descrição curta em marrom, um pouco menor que o texto normal */
 .card-descricao {
     margin: 0 0 14px 0;
     font-size: 15px;
@@ -518,6 +523,7 @@ section {
     border-bottom: none;
 }
 
+/* Preço da bebida em amarelo; white-space: nowrap não deixa o "R$" separar do número */
 .bebida-preco {
     font-family: "Anton", Impact, "Arial Black", sans-serif;
     font-size: 20px;
@@ -525,6 +531,7 @@ section {
     white-space: nowrap;
 }
 
+/* figure da foto do caldo: margin: 0 tira a margem que o navegador coloca */
 .bebidas-foto {
     flex: 1 1 260px;
     margin: 0;
@@ -543,6 +550,7 @@ section {
     transform: rotate(2deg);
 }
 
+/* Legenda da foto em itálico */
 .bebidas-foto figcaption {
     margin-top: 14px;
     font-size: 14px;
@@ -559,6 +567,7 @@ section {
     font-size: 16px;
 }
 
+/* "Quer caprichar?" em vermelho */
 .adicionais strong {
     color: #d62d20;
 }
@@ -577,10 +586,12 @@ section {
     text-shadow: 3px 3px 0 #1d1611;
 }
 
+/* Texto de introdução em amarelo claro no fundo vermelho */
 #promocoes .intro-secao {
     color: #ffe7a3;
 }
 
+/* As três promoções lado a lado, quebrando de linha quando precisar */
 .grade-promocoes {
     display: flex;
     flex-wrap: wrap;
@@ -623,16 +634,19 @@ section {
     text-transform: uppercase;
 }
 
+/* Nome da promoção */
 .promo-titulo {
     font-size: 30px;
 }
 
+/* Explicação da promoção */
 .promo-texto {
     margin: 0 0 16px 0;
     font-size: 15px;
     color: #5a4636;
 }
 
+/* Preço da promoção grande e vermelho */
 .promo-preco {
     margin: 0;
     font-family: "Anton", Impact, "Arial Black", sans-serif;
@@ -651,6 +665,7 @@ section {
     gap: 56px;
 }
 
+/* figure da foto: base de 360px, cresce junto com o texto */
 .historia-foto {
     flex: 1 1 360px;
     margin: 0;
@@ -669,6 +684,7 @@ section {
     box-shadow: -12px 12px 0 #ffc629;
 }
 
+/* Legenda da foto em itálico */
 .historia-foto figcaption {
     margin-top: 20px;
     font-size: 14px;
@@ -676,6 +692,7 @@ section {
     color: #5a4636;
 }
 
+/* Coluna do texto da história, um pouco mais larga que a da foto */
 .historia-texto {
     flex: 1 1 440px;
 }
@@ -743,14 +760,17 @@ section {
     color: #f7eedc;
 }
 
+/* No fundo escuro o título fica amarelo */
 #avaliacoes .titulo-secao {
     color: #ffc629;
 }
 
+/* Texto de introdução em bege claro para aparecer no fundo escuro */
 #avaliacoes .intro-secao {
     color: #cbb89c;
 }
 
+/* Grade das avaliações com flex e flex-wrap */
 .grade-avaliacoes {
     display: flex;
     flex-wrap: wrap;
@@ -774,6 +794,7 @@ section {
     background-color: #3a2d23;
 }
 
+/* Espaço entre as estrelas, o comentário e o nome */
 .avaliacao p {
     margin: 0 0 12px 0;
 }
@@ -785,10 +806,12 @@ section {
     color: #ffffff;
 }
 
+/* No hover o vermelho da avaliação em destaque fica um pouco mais escuro */
 .avaliacao-destaque:hover {
     background-color: #c02619;
 }
 
+/* Comentário em destaque maior e mais grosso */
 .avaliacao-destaque .comentario {
     font-size: 24px;
     font-weight: 600;
@@ -807,10 +830,12 @@ section {
     opacity: 0.3;
 }
 
+/* Tamanho do texto das avaliações comuns */
 .comentario {
     font-size: 16px;
 }
 
+/* Nome do cliente em negrito */
 .avaliacao .cliente {
     margin: 0;
     font-weight: 800;
@@ -843,6 +868,7 @@ section {
     border-radius: 10px;
 }
 
+/* Título de cada caixa (Horário, Endereço, Entrega) */
 .info-caixa h3 {
     font-size: 28px;
 }
@@ -856,6 +882,7 @@ section {
 }
 
 .tabela-horario th,
+/* Horário alinhado à direita da tabela */
 .tabela-horario td {
     padding: 9px 0;
     border-bottom: 1px dashed #c9b28e;
@@ -872,12 +899,14 @@ section {
     text-align: right;
 }
 
+/* Segunda-feira ("Fechado") em vermelho */
 .fechado {
     color: #d62d20;
     font-weight: 800;
     text-transform: uppercase;
 }
 
+/* Observação pequena embaixo da tabela */
 .info-obs {
     margin: 14px 0 0 0;
     font-size: 14px;
@@ -906,16 +935,19 @@ address {
     border-radius: 6px;
 }
 
+/* Lista de entrega com recuo pequeno na esquerda */
 .lista-info {
     margin: 0 0 18px 0;
     padding: 0 0 0 20px;
     font-size: 15px;
 }
 
+/* Espaço entre os itens da lista */
 .lista-info li {
     margin-bottom: 8px;
 }
 
+/* Telefone grande, com a fonte dos títulos */
 .telefone {
     margin: 0 0 16px 0;
     font-family: "Anton", Impact, "Arial Black", sans-serif;
@@ -935,10 +967,12 @@ address {
     text-align: center;
 }
 
+/* Espaço embaixo de cada parágrafo do rodapé */
 #rodape p {
     margin: 0 0 10px 0;
 }
 
+/* Nome da pastelaria no rodapé, grande e amarelo */
 #rodape-logo {
     font-family: "Anton", Impact, "Arial Black", sans-serif;
     font-size: 40px;
@@ -947,6 +981,7 @@ address {
     color: #ffc629;
 }
 
+/* Lista de links do rodapé sem as bolinhas */
 .rodape-links {
     margin: 24px 0;
     padding: 0;
@@ -959,6 +994,7 @@ address {
     margin: 0 10px;
 }
 
+/* Links claros e sem sublinhado; transition deixa a troca de cor suave */
 .rodape-links a {
     color: #f7eedc;
     font-weight: 600;
@@ -1189,3 +1225,40 @@ address {
         font-size: 22px;
     }
 }
+
+/* =========================================================
+   RESUMO DAS PROPRIEDADES USADAS NESTE ARQUIVO
+   =========================================================
+
+   PROPRIEDADES VISTAS NA AULA 06
+   - color e background-color: paleta vermelho (#d62d20), amarelo (#ffc629),
+     creme (#f7eedc) e quase preto (#1d1611).
+   - font-family: Anton nos títulos e Archivo nos textos.
+   - font-size: hierarquia entre título principal, títulos de seção e textos.
+   - margin e padding: com um valor (body, .card-info, .info-caixa) e com
+     vários valores (.container, .intro-secao, #inicio, .cabecalho-conteudo).
+   - border: cartões, botões, fotos, caixas de informação e adicionais.
+   - width e height: fotos, cartões, selo de preço e botão voltar ao topo.
+   - display: block (img, .logo-desde, .bairro), inline (.rodape-links li)
+     e flex (menu, destaque inicial, grades do cardápio e das seções).
+   - position: relative (.card-pastel, .inicio-foto, .linha-tempo, .marco),
+     absolute (.selo, #selo-preco, linha e bolinhas da linha do tempo)
+     e fixed (#voltar-topo).
+   - top, right, bottom e left: .selo (top/right), #selo-preco (left/bottom),
+     .linha-tempo::before (top/bottom/left) e #voltar-topo (right/bottom).
+   - text-align: center (#topo, #selo-preco, #rodape) e justify (.historia-texto p).
+   - Seletores de classe (.botao, .card-pastel, .secao...) para estilos
+     reaproveitados e de ID (#cabecalho, #logo, #rodape, #voltar-topo...)
+     para elementos únicos. Os IDs das seções também servem ao menu.
+
+   PROPRIEDADES ADICIONAIS
+   - Design: border-radius, box-shadow, text-shadow, line-height,
+     letter-spacing, max-width, text-transform, object-fit, font-weight,
+     list-style, z-index, overflow e @import (fontes do Google Fonts).
+   - Interatividade: :hover, :focus, transition, transform (translate,
+     rotate e scale), cursor, opacity, outline e scroll-behavior.
+   - Responsividade: @media (max-width: 900px) para tablet,
+     @media (max-width: 600px) para celular, flex-wrap, gap,
+     flex-direction e scroll-margin-top.
+   - Seletores extras: :last-child, :nth-child() e ::before.
+   ========================================================= */
