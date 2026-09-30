@@ -1,0 +1,87 @@
+/* =========================================================
+   PASTELARIA DA VILA - folha de estilos (style.css)
+   Este é o CSS EXTERNO do site: ele fica separado do HTML e é
+   ligado ao index.html pela tag <link> que está no <head>.
+   ========================================================= */
+
+/* Importa as fontes do Google Fonts:
+   Anton (grossa, para os títulos) e Archivo (para os textos) */
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;600;800&display=swap");
+
+/* ---------- BASE ---------- */
+
+/* scroll-behavior: smooth deixa a rolagem suave ao clicar nos links do menu */
+html {
+    scroll-behavior: smooth;
+}
+
+/* box-sizing: border-box faz a largura (width) já contar o padding e a borda */
+* {
+    box-sizing: border-box;
+}
+
+/* Corpo da página: fundo creme, texto quase preto e a fonte dos textos.
+   margin e padding com um valor só zeram o espaço que o navegador coloca sozinho */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f7eedc;
+    color: #1d1611;
+    font-family: "Archivo", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+/* Todos os títulos usam a fonte grossa Anton, em maiúsculas, como placa de comércio.
+   margin com quatro valores: cima, direita, baixo e esquerda */
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Anton", Impact, "Arial Black", sans-serif;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 0 12px 0;
+}
+
+/* display: block tira o espacinho que sobra embaixo das imagens
+   e max-width: 100% impede que elas passem da largura da tela */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Classe reaproveitada em todas as seções: limita a largura do conteúdo e
+   centraliza na tela (margin com dois valores: 0 em cima/embaixo e auto nos lados) */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Espaço interno padrão das seções: 80px em cima e embaixo, 0 nos lados */
+.secao {
+    padding: 80px 0;
+}
+
+/* scroll-margin-top faz a rolagem parar um pouco antes da seção,
+   para o cabeçalho grudado no topo não cobrir o título */
+section {
+    scroll-margin-top: 90px;
+}
+
+/* Título grande de cada seção, em vermelho */
+.titulo-secao {
+    font-size: 54px;
+    color: #d62d20;
+}
+
+/* Texto curto logo abaixo do título da seção */
+.intro-secao {
+    max-width: 640px;
+    margin: 0 0 40px 0;
+    font-size: 18px;
+    color: #5a4636;
+}
