@@ -18,7 +18,7 @@ A página tem cabeçalho com menu, destaque inicial, cardápio (pastéis salgado
 
 1. Baixe ou clone o repositório.
 2. Abra o arquivo `index.html` no navegador (dois cliques no arquivo ou, no VS Code, com a extensão Live Server).
-3. As fotos ficam na pasta `imagens/`. A lista das fotos está em `imagens/LEIA-ME.txt`; sem elas o site continua funcionando e mostra um bloco no lugar de cada foto.
+3. As fotos ficam na pasta `imagens/` e foram tiradas do [Unsplash](https://unsplash.com). Os créditos de cada fotógrafo estão em `imagens/LEIA-ME.txt`.
 
 ## Integrantes
 

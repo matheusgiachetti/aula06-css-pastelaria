@@ -1,41 +1,39 @@
 PASTA DE IMAGENS - PASTELARIA DA VILA
 =====================================
 
-Coloque nesta pasta as fotos abaixo, com EXATAMENTE estes nomes
-(tudo minúsculo, com hífen e extensão .jpg). Enquanto a foto não
-existir, o site mostra um bloco bege com a descrição no lugar dela,
-sem quebrar o layout.
+Todas as fotos desta pasta foram tiradas do Unsplash (https://unsplash.com)
+e seguem a licença do Unsplash, que permite o uso gratuito.
+Os nomes dos arquivos são os mesmos usados nas tags <img> do index.html.
+Se alguma foto for apagada, o site mostra um bloco bege com a descrição
+no lugar dela, sem quebrar o layout.
 
-Tamanho sugerido: fotos na horizontal, com pelo menos 800 px de largura.
-O CSS recorta as fotos sozinho (object-fit: cover), então não precisa
-deixar todas do mesmo tamanho.
-
+ARQUIVO                      FOTÓGRAFO (UNSPLASH)            PÁGINA DA FOTO
 DESTAQUE INICIAL
-- pastel-destaque.jpg ......... pastel de carne cortado ao meio, recheio aparecendo
+pastel-destaque.jpg          carlos gomes                    https://unsplash.com/photos/9NvwzEKZeHc
 
 PASTÉIS SALGADOS
-- pastel-carne.jpg ............ pastel de carne
-- pastel-queijo.jpg ........... pastel de queijo
-- pastel-pizza.jpg ............ pastel de pizza
-- pastel-frango-catupiry.jpg .. pastel de frango com catupiry
-- pastel-palmito.jpg .......... pastel de palmito
-- pastel-carne-seca.jpg ....... pastel de carne seca com queijo
-- pastel-calabresa.jpg ........ pastel de calabresa
-- pastel-especial.jpg ......... pastel Especial da Vila
+pastel-carne.jpg             Diego Arenas de Rodrigo         https://unsplash.com/photos/Jf2rCI8CN0g
+pastel-queijo.jpg            Fábio Alves                     https://unsplash.com/photos/2_Nj46Xfc4k
+pastel-pizza.jpg             Büşra Salkım                    https://unsplash.com/photos/ib1xly7sxwI
+pastel-frango-catupiry.jpg   Courtney Cook                   https://unsplash.com/photos/T9nnmemS_vs
+pastel-palmito.jpg           Jeferson Santu                  https://unsplash.com/photos/02y--2v_IWg
+pastel-carne-seca.jpg        Bakd&Raw by Karolin Baitinger   https://unsplash.com/photos/KSaMsTvdS3Y
+pastel-calabresa.jpg         fuseviews                       https://unsplash.com/photos/pAgMKlp8O78
+pastel-especial.jpg          Anton                           https://unsplash.com/photos/kJ6myhO23PI
 
 PASTÉIS DOCES
-- pastel-banana-canela.jpg .... pastel de banana com canela
-- pastel-chocolate.jpg ........ pastel de chocolate
-- pastel-romeu-julieta.jpg .... pastel de goiabada com queijo
-- pastel-doce-de-leite.jpg .... pastel de doce de leite com coco
+pastel-banana-canela.jpg     Frederick Medina                https://unsplash.com/photos/_zY2-mQKFrw
+pastel-chocolate.jpg         Frederick Medina                https://unsplash.com/photos/gJweqtoVdZ0
+pastel-romeu-julieta.jpg     Frederick Medina                https://unsplash.com/photos/3y4ZuS4Oe-o
+pastel-doce-de-leite.jpg     Behnaz Kh                       https://unsplash.com/photos/qarJ0gz2-YY
 
 BEBIDAS
-- caldo-de-cana.jpg ........... copo de caldo de cana (de preferência com a moenda)
+caldo-de-cana.jpg            Lachlan Wang                    https://unsplash.com/photos/MkRJhzqNQkE
 
 NOSSA HISTÓRIA
-- dona-cida-balcao.jpg ........ pessoa abrindo massa de pastel num balcão
+dona-cida-balcao.jpg         Jimmy Liu                       https://unsplash.com/photos/DnDiXTs_Z10
 
 HORÁRIO E ENDEREÇO
-- fachada-loja.jpg ............ fachada de pastelaria com toldo vermelho
+fachada-loja.jpg             T                               https://unsplash.com/photos/v0jSVTa2yeQ
 
 Total: 16 fotos.
