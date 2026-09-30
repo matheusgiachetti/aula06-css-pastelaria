@@ -55,6 +55,46 @@
 
     <!-- Conteúdo principal da página: cada parte do site é uma <section> -->
     <main>
+        <!-- ===================== DESTAQUE INICIAL =====================
+             Primeira coisa que aparece: a frase de chamada, os botões
+             para o cardápio e para o WhatsApp e a foto do pastel -->
+        <section id="inicio">
+            <div class="container inicio-conteudo">
+                <!-- Lado do texto -->
+                <div class="inicio-texto">
+                    <!-- Etiqueta pequena e um pouco torta (transform: rotate no CSS) -->
+                    <p class="etiqueta">Pastel de feira na Vila Hortência</p>
+                    <!-- Título principal da página (o único h1); o span pinta o final de amarelo -->
+                    <h1 id="titulo-principal">Pastel frito na hora, <span class="texto-amarelo">do jeito da feira.</span></h1>
+                    <p class="inicio-descricao">
+                        Massa aberta aqui na loja toda manhã, recheio até a borda e óleo trocado todo dia.
+                        Pede pelo WhatsApp que a gente leva quentinho, ou passa aqui e come no balcão.
+                    </p>
+                    <!-- Os dois botões ficam lado a lado com display: flex -->
+                    <div class="inicio-botoes">
+                        <a href="#cardapio" class="botao">Ver o cardápio</a>
+                        <a href="https://wa.me/5515900000000?text=Oi!%20Quero%20fazer%20um%20pedido." class="botao botao-amarelo" target="_blank" rel="noopener">Peça pelo WhatsApp</a>
+                    </div>
+                </div>
+
+                <!-- Lado da foto: tem position: relative para ser a referência do selo de preço -->
+                <div class="inicio-foto">
+                    <img src="imagens/pastel-destaque.jpg" alt="Pastel de carne cortado ao meio, com o recheio aparecendo, em cima de papel de pão" class="foto-destaque">
+                    <!-- Selo redondo com position: absolute, preso no canto de baixo à esquerda da foto -->
+                    <p id="selo-preco">Pastel de carne <strong>R$ 9</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Faixa amarela com as três coisas que a casa faz questão de manter -->
+        <div id="diferenciais">
+            <ul class="container">
+                <li>Massa feita aqui</li>
+                <li>Óleo trocado todo dia</li>
+                <li>Caldo de cana moído na hora</li>
+            </ul>
+        </div>
+
     </main>
 </body>
 

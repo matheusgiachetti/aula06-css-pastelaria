@@ -220,3 +220,144 @@ section {
     border-bottom-color: #ffc629;
     outline: none;
 }
+
+/* ---------- DESTAQUE INICIAL ---------- */
+
+/* Fundo escuro para o pastel e o amarelo chamarem atenção.
+   padding com três valores: 70px em cima, 0 nos lados e 90px embaixo */
+#inicio {
+    background-color: #1d1611;
+    color: #f7eedc;
+    padding: 70px 0 90px;
+}
+
+/* Texto e foto lado a lado; no celular a foto desce por causa do flex-wrap */
+.inicio-conteudo {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 48px;
+}
+
+/* flex: 1 1 420px -> os dois lados crescem por igual a partir de uma base */
+.inicio-texto {
+    flex: 1 1 420px;
+}
+
+/* position: relative transforma esta div na referência do selo de preço (absolute) */
+.inicio-foto {
+    position: relative;
+    flex: 1 1 380px;
+}
+
+/* Etiqueta amarela levemente girada com transform: rotate */
+.etiqueta {
+    display: inline-block;
+    margin: 0 0 18px 0;
+    padding: 4px 12px;
+    background-color: #ffc629;
+    color: #1d1611;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    transform: rotate(-2deg);
+}
+
+/* Título principal bem grande; line-height menor deixa as linhas coladas */
+#titulo-principal {
+    font-size: 78px;
+    line-height: 0.95;
+    color: #ffffff;
+    margin-bottom: 22px;
+}
+
+/* Classe para pintar um trecho de texto de amarelo */
+.texto-amarelo {
+    color: #ffc629;
+}
+
+/* opacity: 0.85 deixa o texto um pouco mais apagado que o título */
+.inicio-descricao {
+    max-width: 520px;
+    margin: 0 0 30px 0;
+    font-size: 19px;
+    opacity: 0.85;
+}
+
+.inicio-botoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+/* Foto do pastel: width e height fixos + object-fit: cover recortam a foto sem deformar.
+   O background-color aparece no lugar enquanto a foto não for colocada na pasta,
+   assim o layout não quebra se a imagem ainda não existir */
+.foto-destaque {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    background-color: #3a2c22;
+    color: #f7eedc;
+    border: 4px solid #ffc629;
+    border-radius: 10px;
+}
+
+/* Selo de preço: position: absolute prende o selo no canto da foto.
+   left e bottom negativos fazem ele "vazar" um pouco para fora da foto.
+   border-radius: 50% transforma o quadrado em círculo */
+#selo-preco {
+    position: absolute;
+    left: -20px;
+    bottom: -30px;
+    width: 130px;
+    height: 130px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #d62d20;
+    color: #ffffff;
+    border: 3px dashed #ffc629;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px #d62d20;
+    font-family: "Anton", Impact, "Arial Black", sans-serif;
+    font-size: 15px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    transform: rotate(-12deg);
+}
+
+#selo-preco strong {
+    font-size: 34px;
+    font-weight: 400;
+    color: #ffc629;
+}
+
+/* ---------- FAIXA DOS DIFERENCIAIS ---------- */
+
+#diferenciais {
+    background-color: #ffc629;
+    border-top: 4px solid #1d1611;
+    border-bottom: 4px solid #1d1611;
+}
+
+/* Os três itens espalhados na linha com justify-content: space-around.
+   gap com dois valores: 12px entre linhas e 30px entre colunas */
+#diferenciais ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 12px 30px;
+    list-style: none;
+    margin: 0 auto;
+    padding: 18px 24px;
+    font-family: "Anton", Impact, "Arial Black", sans-serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
