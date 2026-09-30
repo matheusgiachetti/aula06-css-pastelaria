@@ -817,3 +817,103 @@ section {
     font-weight: 400;
     opacity: 0.7;
 }
+
+/* ---------- HORÁRIO E ENDEREÇO ---------- */
+
+.grade-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+}
+
+/* Caixas de informação: borda fina nos lados e uma faixa vermelha grossa em cima.
+   padding com um valor só (28px em todos os lados) */
+.info-caixa {
+    flex: 1 1 300px;
+    padding: 28px;
+    background-color: #fff8ec;
+    border: 3px solid #1d1611;
+    border-top: 12px solid #d62d20;
+    border-radius: 10px;
+}
+
+.info-caixa h3 {
+    font-size: 28px;
+}
+
+/* Tabela de horário ocupando toda a largura da caixa;
+   border-collapse junta as bordas das células numa linha só */
+.tabela-horario {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+
+.tabela-horario th,
+.tabela-horario td {
+    padding: 9px 0;
+    border-bottom: 1px dashed #c9b28e;
+}
+
+/* Dia à esquerda e horário à direita */
+.tabela-horario th {
+    padding-right: 12px;
+    text-align: left;
+    font-weight: 800;
+}
+
+.tabela-horario td {
+    text-align: right;
+}
+
+.fechado {
+    color: #d62d20;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.info-obs {
+    margin: 14px 0 0 0;
+    font-size: 14px;
+    color: #5a4636;
+}
+
+/* A tag address vem em itálico por padrão; font-style: normal tira o itálico */
+address {
+    margin-bottom: 18px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+/* Foto da fachada com altura fixa (se faltar a foto, fica o bloco bege) */
+.foto-fachada {
+    width: 100%;
+    height: 170px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    background-color: #ecd6ae;
+    color: #6b4a2f;
+    font-size: 14px;
+    border: 3px solid #1d1611;
+    border-radius: 6px;
+}
+
+.lista-info {
+    margin: 0 0 18px 0;
+    padding: 0 0 0 20px;
+    font-size: 15px;
+}
+
+.lista-info li {
+    margin-bottom: 8px;
+}
+
+.telefone {
+    margin: 0 0 16px 0;
+    font-family: "Anton", Impact, "Arial Black", sans-serif;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: #d62d20;
+}
