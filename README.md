@@ -23,5 +23,6 @@ A página tem cabeçalho com menu, destaque inicial, cardápio (pastéis salgado
 ## Integrantes
 
 - Gabriel Martins Antunes
+- Gabriel Martins Antunes
 - Vitor Hugo Rosario do Santos
 - Matheus Giachetti
