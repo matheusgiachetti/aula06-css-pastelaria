@@ -95,6 +95,188 @@
             </ul>
         </div>
 
+        <!-- ===================== CARDÁPIO =====================
+             Parte principal do site, dividida em pastéis salgados,
+             pastéis doces e bebidas. O id="cardapio" é usado pelo menu -->
+        <section id="cardapio" class="secao">
+            <div class="container">
+                <h2 class="titulo-secao">Cardápio</h2>
+                <p class="intro-secao">
+                    Todo pastel sai grande (uns 25 cm) e é frito na hora que você pede.
+                    Os preços abaixo são de balcão; no delivery só entra a taxa de entrega.
+                </p>
+
+                <!-- ---------- PASTÉIS SALGADOS ---------- -->
+                <h3 class="categoria-titulo">Pastéis salgados</h3>
+
+                <!-- Grade de cartões: display: flex com flex-wrap, então os cartões quebram de linha sozinhos -->
+                <div class="grade-cardapio">
+
+                    <!-- Cartão do pastel (classe reaproveitada em todos os itens).
+                         Tem position: relative para o selo "mais pedido" ficar preso nele -->
+                    <article class="card-pastel">
+                        <!-- Selo com position: absolute, no canto de cima à direita do cartão -->
+                        <span class="selo">Mais pedido</span>
+                        <img src="imagens/pastel-carne.jpg" alt="Pastel de carne moída aberto, mostrando o recheio" class="foto-card">
+                        <!-- Nome, descrição curta e preço -->
+                        <div class="card-info">
+                            <h4 class="card-nome">Carne</h4>
+                            <p class="card-descricao">Carne moída refogada com cebola, alho e cheiro-verde. O clássico da feira.</p>
+                            <p class="card-preco">R$ 9,00</p>
+                        </div>
+                    </article>
+
+                    <!-- Pastel de queijo -->
+                    <article class="card-pastel">
+                        <img src="imagens/pastel-queijo.jpg" alt="Pastel de queijo com a mussarela puxando" class="foto-card">
+                        <div class="card-info">
+                            <h4 class="card-nome">Queijo</h4>
+                            <p class="card-descricao">Mussarela que puxa até o fim. Simples e nunca erra.</p>
+                            <p class="card-preco">R$ 9,00</p>
+                        </div>
+                    </article>
+
+                    <!-- Pastel de pizza -->
+                    <article class="card-pastel">
+                        <img src="imagens/pastel-pizza.jpg" alt="Pastel de pizza com presunto, queijo e tomate" class="foto-card">
+                        <div class="card-info">
+                            <h4 class="card-nome">Pizza</h4>
+                            <p class="card-descricao">Mussarela, presunto, rodela de tomate e orégano.</p>
+                            <p class="card-preco">R$ 10,00</p>
+                        </div>
+                    </article>
+
+                    <!-- Pastel de frango com catupiry -->
+                    <article class="card-pastel">
+                        <img src="imagens/pastel-frango-catupiry.jpg" alt="Pastel de frango desfiado com catupiry" class="foto-card">
+                        <div class="card-info">
+                            <h4 class="card-nome">Frango com catupiry</h4>
+                            <p class="card-descricao">Frango desfiado e temperado aqui mesmo, com catupiry de verdade.</p>
+                            <p class="card-preco">R$ 11,00</p>
+                        </div>
+                    </article>
+
+                    <!-- Pastel de palmito -->
+                    <article class="card-pastel">
+                        <img src="imagens/pastel-palmito.jpg" alt="Pastel de palmito cortado ao meio" class="foto-card">
+                        <div class="card-info">
+                            <h4 class="card-nome">Palmito</h4>
+                            <p class="card-descricao">Palmito picado no molho branco, com um pouco de azeitona.</p>
+                            <p class="card-preco">R$ 12,00</p>
+                        </div>
+                    </article>
+
+                    <!-- Pastel de carne seca: tem o selo "novo", na versão vermelha (selo-novo) -->
+                    <article class="card-pastel">
+                        <span class="selo selo-novo">Novo</span>
+                        <img src="imagens/pastel-carne-seca.jpg" alt="Pastel de carne seca com queijo" class="foto-card">
+                        <div class="card-info">
+                            <h4 class="card-nome">Carne seca com queijo</h4>
+                            <p class="card-descricao">Carne seca desfiada na manteiga, com mussarela. Entrou no cardápio este ano.</p>
+                            <p class="card-preco">R$ 13,00</p>
+                        </div>
+                    </article>
+
+                    <!-- Pastel de calabresa -->
+                    <article class="card-pastel">
+                        <img src="imagens/pastel-calabresa.jpg" alt="Pastel de calabresa com queijo" class="foto-card">
+                        <div class="card-info">
+                            <h4 class="card-nome">Calabresa</h4>
+                            <p class="card-descricao">Calabresa moída com cebola e mussarela.</p>
+                            <p class="card-preco">R$ 10,50</p>
+                        </div>
+                    </article>
+
+                    <!-- Pastel especial da casa -->
+                    <article class="card-pastel">
+                        <span class="selo">Receita da casa</span>
+                        <img src="imagens/pastel-especial.jpg" alt="Pastel Especial da Vila, recheado com carne, ovo, azeitona e queijo" class="foto-card">
+                        <div class="card-info">
+                            <h4 class="card-nome">Especial da Vila</h4>
+                            <p class="card-descricao">Carne, ovo cozido, azeitona, cebola e queijo. É o que a Dona Cida come.</p>
+                            <p class="card-preco">R$ 14,00</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- ---------- PASTÉIS DOCES ---------- -->
+                <h3 class="categoria-titulo">Pastéis doces</h3>
+
+                <!-- Os doces usam o mesmo cartão com a classe extra card-doce,
+                     que deixa o cartão deitado (foto de um lado e texto do outro) -->
+                <div class="grade-cardapio">
+                    <!-- Pastel de banana com canela -->
+                    <article class="card-pastel card-doce">
+                        <img src="imagens/pastel-banana-canela.jpg" alt="Pastel de banana polvilhado com açúcar e canela" class="foto-card">
+                        <div class="card-info">
+                            <h4 class="card-nome">Banana com canela</h4>
+                            <p class="card-descricao">Banana nanica por dentro, açúcar e canela por fora. Bem polvilhado.</p>
+                            <p class="card-preco">R$ 9,00</p>
+                        </div>
+                    </article>
+
+                    <!-- Pastel de chocolate -->
+                    <article class="card-pastel card-doce">
+                        <img src="imagens/pastel-chocolate.jpg" alt="Pastel de chocolate derretido" class="foto-card">
+                        <div class="card-info">
+                            <h4 class="card-nome">Chocolate</h4>
+                            <p class="card-descricao">Chocolate ao leite derretido. Cuidado na primeira mordida, que sai quente.</p>
+                            <p class="card-preco">R$ 10,00</p>
+                        </div>
+                    </article>
+
+                    <!-- Pastel Romeu e Julieta -->
+                    <article class="card-pastel card-doce">
+                        <img src="imagens/pastel-romeu-julieta.jpg" alt="Pastel de goiabada com queijo minas" class="foto-card">
+                        <div class="card-info">
+                            <h4 class="card-nome">Romeu e Julieta</h4>
+                            <p class="card-descricao">Goiabada cascão com queijo minas.</p>
+                            <p class="card-preco">R$ 10,00</p>
+                        </div>
+                    </article>
+
+                    <!-- Pastel de doce de leite com coco -->
+                    <article class="card-pastel card-doce">
+                        <img src="imagens/pastel-doce-de-leite.jpg" alt="Pastel de doce de leite com coco ralado" class="foto-card">
+                        <div class="card-info">
+                            <h4 class="card-nome">Doce de leite com coco</h4>
+                            <p class="card-descricao">Doce de leite mineiro com coco ralado.</p>
+                            <p class="card-preco">R$ 11,00</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- ---------- BEBIDAS ---------- -->
+                <h3 class="categoria-titulo">Bebidas</h3>
+
+                <!-- Lista de preços ao lado de uma foto (os dois lado a lado com flex) -->
+                <div class="bebidas-bloco">
+                    <!-- Cada linha da lista tem o nome de um lado e o preço do outro -->
+                    <ul class="lista-bebidas">
+                        <li><span>Caldo de cana 300 ml</span> <span class="bebida-preco">R$ 7,00</span></li>
+                        <li><span>Caldo de cana 500 ml</span> <span class="bebida-preco">R$ 10,00</span></li>
+                        <li><span>Caldo de cana com limão ou abacaxi (500 ml)</span> <span class="bebida-preco">R$ 11,00</span></li>
+                        <li><span>Suco de laranja natural (400 ml)</span> <span class="bebida-preco">R$ 9,00</span></li>
+                        <li><span>Refrigerante lata</span> <span class="bebida-preco">R$ 6,00</span></li>
+                        <li><span>Refrigerante 2 litros</span> <span class="bebida-preco">R$ 14,00</span></li>
+                        <li><span>Água com ou sem gás</span> <span class="bebida-preco">R$ 4,00</span></li>
+                    </ul>
+
+                    <!-- figure junta a foto com a legenda (figcaption) -->
+                    <figure class="bebidas-foto">
+                        <img src="imagens/caldo-de-cana.jpg" alt="Copo de caldo de cana gelado em cima do balcão, com a moenda ao fundo" class="foto-bebida">
+                        <figcaption>A moenda fica no balcão: o caldo é moído na hora, na sua frente.</figcaption>
+                    </figure>
+                </div>
+
+                <!-- Caixa com os adicionais, com borda tracejada vermelha -->
+                <p class="adicionais">
+                    <strong>Quer caprichar?</strong> Catupiry + R$ 3,00 &middot; Cheddar + R$ 3,00 &middot;
+                    Ovo + R$ 2,00 &middot; Bacon + R$ 4,00. Vinagrete e pimenta da casa são por nossa conta, é só pedir.
+                </p>
+            </div>
+        </section>
+
     </main>
 </body>
 
